@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(187, 226, 187);
+    color: rgb(93, 93, 93);
+}
+
+.edu-vic-wa-nt-beginner-123 {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Example weight */
+    font-style: normal;
+}
+
+        body {
+            font-family: 'Edu VIC WA NT Beginner', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+            padding-top: 1em;
+        }
+        img {
+            width: 75%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+            padding-top: 1em;
+        }
+        p {
+            font-size: 1em;
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+            padding-top: 1em;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 1em;
+            padding-left: 1em;
+            border-left: 2px solid #333;
+        }
+        section {
+            margin: 1em;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 1em;
+        }
+        a {
+            display: block;
+            font-size: 1em;
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+            padding-top: 1em;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #f0f0f0;
+            background-color: #608e61;
+        }
+
+body {
+    background-color: rgb(187, 226, 187);
+    color: rgb(93, 93, 93);
+}
