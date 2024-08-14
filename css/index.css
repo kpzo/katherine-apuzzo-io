@@ -1,4 +1,31 @@
-
+/*mobile first*/
+@media (max-width: 600px) {
+    body {
+      margin: 1em;
+    }
+    nav {
+      display: fixed;
+    }
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+/*tablet*/
+@media (min-width: 600px) {
+    body {
+      margin: 0em;
+    }
+    nav {
+      display: sticky;
+    }
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 body {
     background-color: rgb(187, 226, 187);
 }
@@ -12,8 +39,8 @@ body {
     font-family: 'Edu VIC WA NT Beginner', sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    margin: 0;
-    padding: 0;
+    margin: 0em;
+    padding: 2em;
 }
 nav {
     display: flex;
@@ -49,18 +76,14 @@ img {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-#container {
-    display: flex;
+.flex-container {
+    display: grid;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 1em;
-    padding: 1em;
+    justify-content: center;
+    margin: 5em;
+    padding: 0em;
     background-color: #fff;
     border-radius: 1em;
-}
-.flex-container {
-    display: flex; 
-    flex-wrap: nowrap;
 }
 .flex-container div {
     background: #ffffff;
@@ -98,10 +121,10 @@ li {
 }
 
 section {
-    margin: 2.5em;
+    margin: 1em;
     padding: 1em;
     background-color: #fff;
-    border-radius: 25em;
+    border-radius: 40em;
 }
 a {
     display: flex;
@@ -137,6 +160,7 @@ h3 {
     padding-bottom: 1em;
     border-radius: 4em;
     font-size: medium;
+    flex-direction: column;
 }
 h6 {
     font-size: .8em;
@@ -152,4 +176,49 @@ h6 {
     margin-top: 0;
     padding-top: .1em;
     padding-left: 1em;
+}
+.column {
+    margin: .5em;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 3em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; 
+    margin: 1em;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 3em;
+    justify-content: center;
+}
+.container1 {
+    display: grid;
+    grid-gap: 1em;
+    margin: 1em;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 3em;
+    justify-content: center;
+}
+.column1 {
+    margin: 1em;
+    padding: 0em;
+    background-color: #ffffff;
+    border-radius: 5em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+#Connect {
+    display: flex;
+    flex-direction: column;
+    gap: 0em; 
+    margin: 1em;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 10em;
+    justify-content: center;
 }
