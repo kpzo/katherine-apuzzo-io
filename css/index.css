@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(187, 226, 187);
+}
+.edu-vic-wa-nt-beginner-123 {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+body {
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: flexbox;
+    margin-right: .1em;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #99dab2;
+}
+h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    padding-top: .5em;
+    text-shadow: 2px 1px 4px rgba(78, 78, 78, 0.5);
+}
+img {
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 1em;
+}
+.flex-container {
+    display: flex; 
+    flex-wrap: nowrap;
+}
+.flex-container div {
+    background: #ffffff;
+`   height: 100px;
+    flex: 1;
+}
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    padding-top: .5em;
+    text-shadow: 2px 1px 4px rgba(78, 78, 78, 0.5);
+}
+p {
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    padding-top: .5em;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin-bottom: 1em;
+    padding-left: 1em;
+    border-left: 2px solid #333;
+    list-style-type: none;
+}
+section {
+    margin: 2.5em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 19em;
+}
+a {
+    display: flex;
+    font-size: .9em;
+    color: #333;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: .5em;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+    background-color: #608e61;
+    border-radius: 17em;
+}
+body {
+    background-color: rgb(187, 226, 187);
+}
+h3 {
+    font-size: .9em;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1em;
+}
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: .2em;
+    padding: .8em;
+    background-color: #fff;
+    border-radius: 2em;
+    font-size: medium;
+}
+h6 {
+    font-size: .7em;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    padding-top: .5em;
+}
+.column p {
+    font-size: .7em;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    padding-top: .2em;
+    padding-left: 1em;
+}
