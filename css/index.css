@@ -29,7 +29,8 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+}
+
 body {
     background-color: rgb(187, 226, 187);
 }
@@ -256,7 +257,6 @@ h6 {
 #Connect {
     display: flex;
     flex-direction: column;
-    gap: 0em; 
     margin: 9em;
     padding: 1em;
     background-color: #ffffff;
