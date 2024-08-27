@@ -13,7 +13,7 @@ for (let i = 0; i < skills.length; i++) {
   const skill = document.createElement('li');
   skill.innerHTML = skills[i];
   skillsList.appendChild(skill);
-}   
+}
 skillsList.style.display = 'flex';
 skillsList.style.flexWrap = 'wrap';
 skillsList.style.justifyContent = 'center';
