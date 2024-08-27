@@ -15,7 +15,7 @@
 /*tablet*/
 @media (min-width: 600px) {
     body {
-      margin: 0em;
+      margin: 5em;
     }
     nav {
       display: sticky;
@@ -25,7 +25,12 @@
       flex-direction: row;
       align-items: center;
     }
-  }
+    .flex-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 body {
     background-color: rgb(187, 226, 187);
 }
@@ -46,6 +51,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2em;
+    border-radius: 2em; 
 }
 nav ul {
     list-style-type: none;
@@ -60,7 +67,7 @@ nav ul li a {
     color: #333;
 }
 h1 {
-    font-size: 2.8em;
+    font-size: 3em;
     color: #333;
     text-align: center;
     margin-top: 0;
@@ -68,7 +75,7 @@ h1 {
     text-shadow: 2px 1px 4px rgba(78, 78, 78, 0.5);
 }
 img {
-    width: 75%;
+    width: 70%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -91,7 +98,7 @@ img {
     flex: 1;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #333;
     text-align: center;
     margin-top: 0;
@@ -99,7 +106,7 @@ h2 {
     text-shadow: 2px 1px 4px rgba(78, 78, 78, 0.5);
 }
 p {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #333;
     text-align: center;
     margin-top: 0;
@@ -114,17 +121,29 @@ ul {
     margin: 0;
 }
 li {
-    margin-bottom: 0em;
+    margin-bottom: 1em;
     padding-left: 1em;
-    border-left: 1px solid #333;
+    padding-right: 1em;
     list-style-type: none;
+    border-style:calc(1em, 1em, 1em, 1em);
+    border-style: none;
+    font-size: 1em;
 }
-
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 40em;
+}
 section {
     margin: 1em;
     padding: 1em;
     background-color: #fff;
     border-radius: 40em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 a {
     display: flex;
@@ -212,12 +231,45 @@ h6 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     justify-content: center;
 }
+.column1 a {
+    display: flex;
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 0;
+    padding-top:1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+}
+#About {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em; 
+    margin: 8em;
+    padding: 3em;
+    background-color: #ffffff;
+    border-radius: 10em;
+    justify-content: center;
+}
 #Connect {
     display: flex;
     flex-direction: column;
-    gap: 0em; 
-    margin: 1em;
+    margin: 9em;
     padding: 1em;
+    background-color: #ffffff;
+    border-radius: 10em;
+    justify-content: center;
+    gap: 0.5em;
+}
+#Skills {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em; 
+    margin: 8em;
+    padding: 3em;
     background-color: #ffffff;
     border-radius: 10em;
     justify-content: center;
