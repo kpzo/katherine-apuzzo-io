@@ -274,3 +274,65 @@ h6 {
     border-radius: 10em;
     justify-content: center;
 }
+#formSubmit {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em; 
+    margin: 8em;
+    padding: 3em;
+    background-color: #ffffff;
+    border-radius: 10em;
+    justify-content: center;
+    align-items: center;
+}
+#formSubmit input {
+    display: flex;
+    font-size: 1em;
+    color: #333;
+    margin:  1em;
+    justify-content: center;
+    margin-top: 1em;
+    padding-top:1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+}
+#formSubmit textarea {
+    display: flex;
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top:1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+}
+#messages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em; 
+    margin: 8em;
+    padding: 3em;
+    background-color: #ffffff;
+    border-radius: 10em;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    display: flex;
+    font-size: .7em;
+    color: #315d32;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 0;
+    padding-top:1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+}
