@@ -127,3 +127,35 @@ function makeEditButton() {
 
   return editButton;
 }
+
+const userName = 'kpzo';
+fetch(`https://api.github.com/users/${userName}/repos`)
+  .then((response) => {
+    if (response.ok) {
+      return response.text();
+    } else {
+      throw new Error('Failed to fetch respositories');
+    }
+  })
+  .then((data) => {
+    const repositories = JSON.parse(data);
+    console.log(repositories);
+
+    const projectSection = document.querySelector('#Projects');
+
+    let projectList = document.createElement('ul');
+    projectSection.appendChild(projectList);
+
+    for (let repository of repositories) {
+      let project = document.createElement('li');
+      project.innerText = repository.name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    if (error instanceof SyntaxError) {
+      console.log('Unparsable response from server');
+    } else {
+    console.log('Error fetching data:', error);
+    }
+  });
