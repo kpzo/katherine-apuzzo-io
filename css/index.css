@@ -1,338 +1,377 @@
-/*mobile first*/
+
+/* Mobile First - For devices smaller than 600px */
 @media (max-width: 600px) {
     body {
-      margin: 1em;
+        margin: .5em;
+        font-size: 1rem;
     }
+
     nav {
-      display: fixed;
+        display: block;
+        margin-bottom: 0.5em;
+        font-size: .5em;
+        margin-left: auto;
     }
+
     nav ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        flex-direction: row;
+        align-items: center;
     }
-  }
-/*tablet*/
-@media (min-width: 600px) {
-    body {
-      margin: 5em;
+
+    h1 {
+        font-size: 2em;
     }
-    nav {
-      display: sticky;
+
+    h2 {
+        font-size: 1.5em;
     }
-    nav ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+
+    h3 {
+        font-size: 1.2em;
     }
+
+    p {
+        font-size: .7em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 0.5em 1em;
+    }
+
     .flex-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: .5fr;
     }
 }
 
-body {
-    background-color: rgb(187, 226, 187);
+/* Tablet View - Devices between 600px and 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+    body {
+        margin: .5em;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    .flex-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
 }
-.edu-vic-wa-nt-beginner-123 {
-    font-family: "Edu VIC WA NT Beginner", cursive;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-body {
-    font-family: 'Edu VIC WA NT Beginner', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0em;
-    padding: 2em;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    border-radius: 2em; 
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-nav ul li {
-    display: flexbox;
-    margin-right: 1em;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-h1 {
-    font-size: 3em;
-    color: #333;
-    text-align: center;
-    margin-top: 0;
-    padding-top: .5em;
-    text-shadow: 2px 1px 4px rgba(78, 78, 78, 0.5);
-}
-img {
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.flex-container {
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5em;
-    padding: 0em;
-    background-color: #fff;
-    border-radius: 1em;
-}
-.flex-container div {
-    background: #ffffff;
-    height: 200px;
-    flex: 1;
-}
-h2 {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-    margin-top: 0;
-    padding-top: .5em;
-    text-shadow: 2px 1px 4px rgba(78, 78, 78, 0.5);
-}
-p {
-    font-size: 1.2em;
-    color: #333;
-    text-align: center;
-    margin-top: 0;
-    padding-top: .5em;
-}
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-li {
-    margin-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    list-style-type: none;
-    border-style:calc(1em, 1em, 1em, 1em);
-    border-style: none;
-    font-size: 1em;
-}
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    padding: 1em;
-    background-color: #fff;
-    border-radius: 40em;
-}
-section {
-    margin: 1em;
-    padding: 1em;
-    background-color: #fff;
-    border-radius: 40em;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-a {
-    display: flex;
-    font-size: 1em;
-    color: #333;
-    margin: 0 auto;
-    justify-content: center;
-    margin-top: 0;
-    padding-top: .5em;
-    text-decoration: none;
-}
-a:hover {
-    color: #ffffff;
-    background-color: #608e61;
-    border-radius: 2em;
-}
-body {
-    background-color: rgb(187, 226, 187);
-}
-h3 {
-    font-size: 1em;
-    color: #333;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 0;
-}
-.columns {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 2em;
-    background-color: #fff;
-    padding-bottom: 1em;
-    border-radius: 4em;
-    font-size: medium;
-    flex-direction: column;
-}
-h6 {
-    font-size: .8em;
-    color: #333;
-    text-align: center;
-    margin-top: 0;
-    padding-top: .5em;
-}
-.column p {
-    font-size: .9em;
-    color: #333;
-    text-align: center;
-    margin-top: 0;
-    padding-top: .1em;
-    padding-left: 1em;
-}
-.column {
-    margin: .5em;
-    padding: 2em;
-    background-color: #fff;
-    border-radius: 3em;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-}
-.experience {
-    display: flex;
-    flex-direction: column;
-    gap: 1em; 
-    margin: 1em;
-    padding: 1em;
-    background-color: #ffffff;
-    border-radius: 3em;
-    justify-content: center;
-}
-.container1 {
-    display: grid;
-    grid-gap: 1em;
-    margin: 1em;
-    padding: 1em;
-    background-color: #ffffff;
-    border-radius: 3em;
-    justify-content: center;
-}
-.column1 {
-    margin: 1em;
-    padding: 0em;
-    background-color: #ffffff;
-    border-radius: 5em;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-}
-.column1 a {
-    display: flex;
-    font-size: 1.2em;
-    color: #333;
-    margin: 0 auto;
-    justify-content: center;
-    margin-top: 0;
-    padding-top:1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-decoration: none;
-}
-#About {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em; 
-    margin: 8em;
-    padding: 3em;
-    background-color: #ffffff;
-    border-radius: 10em;
-    justify-content: center;
-}
-#Connect {
-    display: flex;
-    flex-direction: column;
-    margin: 9em;
-    padding: 1em;
-    background-color: #ffffff;
-    border-radius: 10em;
-    justify-content: center;
-    gap: 0.5em;
-}
-#Skills {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em; 
-    margin: 8em;
-    padding: 3em;
-    background-color: #ffffff;
-    border-radius: 10em;
-    justify-content: center;
-}
-#formSubmit {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em; 
-    margin: 8em;
-    padding: 3em;
-    background-color: #ffffff;
-    border-radius: 10em;
-    justify-content: center;
-    align-items: center;
-}
-#formSubmit input {
-    display: flex;
-    font-size: 1em;
-    color: #333;
-    margin:  1em;
-    justify-content: center;
-    margin-top: 1em;
-    padding-top:1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-decoration: none;
-}
-#formSubmit textarea {
-    display: flex;
-    font-size: 1.2em;
-    color: #333;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    padding-top:1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-decoration: none;
-}
-#messages {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em; 
-    margin: 8em;
-    padding: 3em;
-    background-color: #ffffff;
-    border-radius: 10em;
-    justify-content: center;
-    align-items: center;
-}
-button {
-    display: flex;
-    font-size: .7em;
-    color: #315d32;
-    margin: 0 auto;
-    justify-content: center;
-    margin-top: 0;
-    padding-top:1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-decoration: none;
-}
+    body {
+        background-color: rgb(187, 226, 187);
+    }
+    .edu-vic-wa-nt-beginner-123 {
+        font-family: "Edu VIC WA NT Beginner", cursive;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+    }
+    body {
+        font-family: 'Edu VIC WA NT Beginner', sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0em;
+        padding: .5em;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        border-radius: 2em;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: flexbox;
+        margin-right: 1em;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+    h1 {
+        font-size: 3em;
+        color: #333;
+        text-align: center;
+        margin-top: 0;
+        padding-top: .5em;
+        text-shadow: 2px 1px 4px rgba(78, 78, 78, 0.5);
+    }
+    img {
+        width: 70%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .flex-container {
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5em;
+        padding: 0em;
+        background-color: #fff;
+        border-radius: 1em;
+    }
+    .flex-container div {
+        background: #ffffff;
+        height: 200px;
+        flex: 1;
+    }
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-top: 0;
+        padding-top: .5em;
+        text-shadow: 2px 1px 4px rgba(78, 78, 78, 0.5);
+    }
+    p {
+        font-size: 1.2em;
+        color: #333;
+        text-align: center;
+        margin-top: 0;
+        padding-top: .5em;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        margin-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        list-style-type: none;
+        border-style: calc(1em, 1em, 1em, 1em);
+        border-style: none;
+        font-size: 1em;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+        padding: 1em;
+        background-color: #fff;
+        border-radius: 40em;
+    }
+    section {
+        margin: 1em;
+        padding: 1em;
+        background-color: #fff;
+        border-radius: 40em;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    a {
+        display: flex;
+        font-size: 1em;
+        color: #333;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 0;
+        padding-top: .5em;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #ffffff;
+        background-color: #608e61;
+        border-radius: 2em;
+    }
+    body {
+        background-color: rgb(187, 226, 187);
+    }
+    h3 {
+        font-size: 1em;
+        color: #333;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .columns {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 2em;
+        background-color: #fff;
+        padding-bottom: 1em;
+        border-radius: 4em;
+        font-size: medium;
+        flex-direction: column;
+    }
+    h6 {
+        font-size: .8em;
+        color: #333;
+        text-align: center;
+        margin-top: 0;
+        padding-top: .5em;
+    }
+    .column p {
+        font-size: .9em;
+        color: #333;
+        text-align: center;
+        margin-top: 0;
+        padding-top: .1em;
+        padding-left: 1em;
+    }
+    .column {
+        margin: .5em;
+        padding: 2em;
+        background-color: #fff;
+        border-radius: 3em;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        justify-content: center;
+    }
+    .experience {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin: 1em;
+        padding: 1em;
+        background-color: #ffffff;
+        border-radius: 3em;
+        justify-content: center;
+    }
+    .container1 {
+        display: grid;
+        grid-gap: 1em;
+        margin: 1em;
+        padding: 1em;
+        background-color: #ffffff;
+        border-radius: 3em;
+        justify-content: center;
+    }
+    .column1 {
+        margin: 1em;
+        padding: 0em;
+        background-color: #ffffff;
+        border-radius: 5em;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        justify-content: center;
+    }
+    .column1 a {
+        display: flex;
+        font-size: 1.2em;
+        color: #333;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-decoration: none;
+    }
+    #About {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 8em;
+        padding: 3em;
+        background-color: #ffffff;
+        border-radius: 10em;
+        justify-content: center;
+    }
+    #Connect {
+        display: flex;
+        flex-direction: column;
+        margin: 9em;
+        padding: 1em;
+        background-color: #ffffff;
+        border-radius: 10em;
+        justify-content: center;
+        gap: 0.5em;
+    }
+    #Skills {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 8em;
+        padding: 3em;
+        background-color: #ffffff;
+        border-radius: 10em;
+        justify-content: center;
+    }
+    #formSubmit {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 8em;
+        padding: 3em;
+        background-color: #ffffff;
+        border-radius: 10em;
+        justify-content: center;
+        align-items: center;
+    }
+    #formSubmit input {
+        display: flex;
+        font-size: 1em;
+        color: #333;
+        margin: 1em;
+        justify-content: center;
+        margin-top: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-decoration: none;
+    }
+    #formSubmit textarea {
+        display: flex;
+        font-size: 1.2em;
+        color: #333;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-decoration: none;
+    }
+    #messages {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 8em;
+        padding: 3em;
+        background-color: #ffffff;
+        border-radius: 10em;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        display: flex;
+        font-size: .7em;
+        color: #315d32;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-decoration: none;
+    }
